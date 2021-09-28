@@ -1,0 +1,20 @@
+.container{
+    height: 40vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://us.123rf.com/450wm/seamartini/seamartini1809/seamartini180900366/110288585-carreras-de-coches-o-bandera-de-rally-de-autom%C3%B3viles-3d-vector-de-fondo-a-cuadros-de-bandera-deporti.jpg?ver=6");
+    
+}
+
+h1 {
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    font-family: fantasy;
+    border: black solid;
+    background-color: black;
+}
