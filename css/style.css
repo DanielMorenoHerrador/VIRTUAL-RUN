@@ -9,12 +9,49 @@
     
 }
 
-h1 {
-    font-family: cursive;
-    font-style: italic;
-    text-align: center;
-    color: red;
-    font-family: fantasy;
-    border: black solid;
-    background-color: black;
+
+body {margin: 0;}
+
+.diapositiva1 {
+    height: 100vh;
+}
+.diapositiva2 {
+    background-color: green;
+    height: 100vh;
+}
+.diapositiva3 {
+    background-color: yellow;
+    height: 100vh;
+}
+.diapositiva4 {
+    background-color: red;
+    height: 100vh;
+}
+
+.btn-dark{
+    height: 10em;
+    width: 25em;
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 10em;
+}
+
+.div-sup {
+    background-color: transparent;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: inherit;
+    
+}
+.div-inf {
+    background-color: transparent;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: inherit;
 }
