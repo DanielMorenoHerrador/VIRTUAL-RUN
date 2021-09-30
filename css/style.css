@@ -16,7 +16,6 @@ body {margin: 0;}
     height: 100vh;
 }
 .diapositiva2 {
-    background-color: green;
     height: 100vh;
 }
 .diapositiva3 {
@@ -54,4 +53,69 @@ body {margin: 0;}
     flex-direction: column;
     align-items: center;
     justify-content: inherit;
+}
+
+.med-sup {
+    background-color: transparent;
+    height: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: inherit;
+}
+.med-med {
+    background-color: transparent;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.med-inf {
+    background-color: transparent;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+}
+
+.med-one{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.med-two{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.med-three{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.med-four{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nombrepersonaje{
+    color: white;
+}
+
+.two-btn-dark{
+    background-color: black;
+    height: 10em;
+    width: 25em;
+    font-size: 20px;
+}
+.titulotwo {
+    font-size: 10em;
 }

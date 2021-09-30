@@ -40,19 +40,45 @@ Fecha: 28/09/2021 -->
 
 <body>
     <section id="1">
-        <div class="diapositiva1" style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
+        <div class="diapositiva1"
+            style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
             <div class="div-sup">
                 <h1 class="titulo" style="color: white; font-family: fantasy;">VIRTUAL RUN 1.0</h1>
-            </div>            
+            </div>
             <div class="div-inf">
                 <button type="button" class="btn btn-dark" onclick='cambiarPantalla("2")'>START GAME</button>
-            </div>            
+            </div>
         </div>
     </section>
 
     <section id="2" style="display: none;">
-        <div class="diapositiva2">
-            <img class="pic" onclick='cambiarPantalla("3")' src="/items/sonicsprite.gif" alt="sonic" height="600em" />
+        <div class="diapositiva2"
+            style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
+            <div class="div med-sup">
+                <h1 class="titulotwo" style="color: white; font-family: fantasy;">VIRTUAL RUN 1.0</h1>
+            </div>
+            <div class="div med-med">
+                <div class="col med-one">
+                    <img class="pic" onclick='selectPersonaje("sonic")' src="/items/sonicsprite.gif" alt="sonic"
+                        height="350em" />
+                    <h1 class="nombrepersonaje">SONIC</h1>
+                </div>
+                <div class="col med-two">
+                    <img class="pic" src="/items/pikachusprite.gif" alt="pikachu" height="350em" />
+                    <h1 class="nombrepersonaje">PIKACHU</h1>
+                </div>
+                <div class="col med-three">
+                    <img class="pic" src="/items/luffysprite.gif" alt="luffy" height="350em" />
+                    <h1 class="nombrepersonaje">LUFFY</h1>
+                </div>
+                <div class="col med-four">
+                    <img class="pic" src="/items/itachisprite.gif" alt="itachi" height="350em" />
+                    <h1 class="nombrepersonaje">ITACHI</h1>
+                </div>
+            </div>
+            <div class="div med-inf">
+                <button type="button" class="btn two-btn-dark" onclick='cambiarPantalla("3")'>START GAME</button>
+            </div>
         </div>
     </section>
 
