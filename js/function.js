@@ -1,17 +1,6 @@
 
-class Corredores {
-    constructor(nombre, aceleracion, velocidad){
-        this.nombre = nombre,
-        this.aceleracion = aceleracion,
-        this.velocidad = velocidad
-    }
-    
-}
 
-let Corredores1 = new Corredores("sonic","20","60")
-let Corredores2 = new Corredores("pikachu","30","40")
-let Corredores3 = new Corredores("luffy","40","50")
-let Corredores4 = new Corredores("itachi","35","45")
+//Cambio de pantalla
 
 const cambiarPantalla = (valor) => {
 
@@ -26,46 +15,83 @@ const cambiarPantalla = (valor) => {
         document.getElementById(cadaPosicion).style.display = "none";
     }
 
-
 }
 
-// let impala = document.getElementById("impala")
 
-// let mustang = document.getElementById("mustang")
+// Instanciar los corredores
 
-// let mensajeEleccion = document.getElementById("contenedorTexto")
-
-// let equipo1 = {}
-
-// let equipo2 = {}
-
-
-const selectPersonaje = (Elegido) => {
-
-    mensajeEleccion.innerHTML = `Has seleccionado ${Elegido}`;
-    let personajeElegido = document.getElementById(elegido);
-
-    if(personajeElegido.classList.contains("contenedorCorredor2")){
-        personajeElegido.classList.remove("contenedorCorredor2");
-    } else {
-        
-        personajeElegido.classList.add("contenedorCoche2");
+class Corredores {
+    constructor(nombre, aceleracion, velocidad){
+        this.nombre = nombre,
+        this.aceleracion = aceleracion,
+        this.velocidad = velocidad
     }
-    console.log("selectPersonaje")
+    
+}
+
+let Corredores1 = new Corredores("sonic","20","60")
+let Corredores2 = new Corredores("pikachu","30","40")
+let Corredores3 = new Corredores("luffy","40","50")
+let Corredores4 = new Corredores("itachi","35","45")
+
+
+//Variables
+
+let corredor1 = document.getElementById("corredor1");
+let corredor2 = "";
+let arrayDeCorredores = ["",""]
+var indice = 0;
+
+
+// Traductor
+
+let traductorCorredores = {
+        "sonic" : Corredores1,
+        "pikachu" : Corredores2,
+        "luffy" : Corredores3,
+        "itachi" : Corredores4
 }
 
 
-// organizer = (arg_0) => {
-//     let arrFases = ["1","2","3","4"];
-//     arrFases = arrFases.filter(val => !arg_0.includes(val));
-//     document.getElementById(arg_0).style.display = "block";
-//     for (let _f of arrFases) {
-//         document.getElementById(_f).style.display = "none";
-//         console.log()
-//     }
-// }
 
-// for (let i = 0; i < array.length; i++) {
-//     const element = array[i];
-    
+// Seleccion de corredores
+
+const seleccionarCorredores = (personajeElegido) => {
+
+    if (corredor1 !=""){
+        corredor2 = traductorCorredores[personajeElegido]
+
+        console.log("El corredor 1 es",corredor1);
+        console.log("El corredor 2 es",corredor2);
+
+        setTimeout(()=>{
+            cambiarPantalla("3");
+        },2000)
+    } 
+    else {
+
+        corredor1 = traductorCorredores[personajeElegido];
+
+    }
+}
+
+// Distancia que recorren los corredores
+
+var Metroscorredor1 = 0;
+var Metroscorredor2 = 0;
+var Metrosarecorrer = 4000;
+
+
+// Mostrar los corredores seleccionados
+
+const carreraVs =() =>{
+    var corredor1 = document.getElementsByClassName("participante1");
+    var corredor2 = document.getElementsByClassName("participante2");
+}
+
+
+
+// const carreraVs =() =>{
+//     let arrayDeCorredores = ["1","2"];
+//     arrayDeCorredores = arrayDeCorredores.filter.corredor1 + arrayDeCorredores.filter.corredor2
 // }

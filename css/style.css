@@ -119,3 +119,22 @@ body {margin: 0;}
 .titulotwo {
     font-size: 10em;
 }
+
+.sup-titulo {
+    background-color: transparent;
+    height: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: inherit;
+}
+
+.med-carrera{
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inf-jugar{
+    height: 20%;
+    background-color: transparent;
+}
