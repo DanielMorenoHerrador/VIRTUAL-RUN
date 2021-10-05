@@ -1,3 +1,7 @@
+/* Autor: Daniel Moreno Herrador
+Fecha: 05/10/2021 */
+
+
 //Cambio de pantalla
 
 const cambiarPantalla = (valor) => {
