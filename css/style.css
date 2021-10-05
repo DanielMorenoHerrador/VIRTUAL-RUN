@@ -1,4 +1,6 @@
-.container{
+/* Estilo contenedor principal (Fondo) */
+
+.container {
     height: 40vw;
     width: 80vw;
     display: flex;
@@ -6,36 +8,69 @@
     justify-content: space-around;
     align-items: center;
     background-image: url("https://us.123rf.com/450wm/seamartini/seamartini1809/seamartini180900366/110288585-carreras-de-coches-o-bandera-de-rally-de-autom%C3%B3viles-3d-vector-de-fondo-a-cuadros-de-bandera-deporti.jpg?ver=6");
-    
+
+}
+
+body {
+    margin: 0;
 }
 
 
-body {margin: 0;}
+/* Estilos de las diferentes pantallas */
 
 .diapositiva1 {
     height: 100vh;
 }
+
 .diapositiva2 {
     height: 100vh;
 }
+
 .diapositiva3 {
     background-color: yellow;
     height: 100vh;
 }
+
 .diapositiva4 {
     background-color: red;
     height: 100vh;
 }
 
-.btn-dark{
+
+/* Estilo de los diferentes botones */
+
+.btn-dark {
     height: 10em;
     width: 25em;
     font-size: 20px;
 }
 
+.two-btn-dark {
+    background-color: black;
+    height: 10em;
+    width: 25em;
+    font-size: 20px;
+}
+
+#btn-go {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+/* Estilo del titulo */
+
 .titulo {
     font-size: 10em;
 }
+
+.titulotwo {
+    font-size: 10em;
+}
+
+
+/* Estilos contenedores pantalla fase 1 */
 
 .div-sup {
     background-color: transparent;
@@ -44,8 +79,9 @@ body {margin: 0;}
     flex-direction: column-reverse;
     align-items: center;
     justify-content: inherit;
-    
+
 }
+
 .div-inf {
     background-color: transparent;
     height: 50%;
@@ -55,6 +91,9 @@ body {margin: 0;}
     justify-content: inherit;
 }
 
+
+/* Estilos contenedores pantalla fase 2 */
+
 .med-sup {
     background-color: transparent;
     height: 20%;
@@ -63,12 +102,14 @@ body {margin: 0;}
     align-items: center;
     justify-content: inherit;
 }
+
 .med-med {
     background-color: transparent;
     height: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .med-inf {
     background-color: transparent;
     height: 20%;
@@ -78,47 +119,40 @@ body {margin: 0;}
     justify-content: initial;
 }
 
-.med-one{
+.med-one {
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.med-two{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.med-three{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.med-four{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.nombrepersonaje{
-    color: white;
 }
 
-.two-btn-dark{
-    background-color: black;
-    height: 10em;
-    width: 25em;
-    font-size: 20px;
+.med-two {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.titulotwo {
-    font-size: 10em;
+
+.med-three {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.med-four {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos contenedores pantalla fase 2 */
 
 .sup-titulo {
     background-color: transparent;
@@ -129,12 +163,21 @@ body {margin: 0;}
     justify-content: inherit;
 }
 
-.med-carrera{
+.med-carrera {
     height: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
-.inf-jugar{
+
+.inf-jugar {
     height: 20%;
     background-color: transparent;
+}
+
+
+/* Estilo nombres personajes */
+
+.nombrepersonaje {
+    color: white;
 }

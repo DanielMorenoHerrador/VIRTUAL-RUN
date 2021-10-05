@@ -17,28 +17,8 @@ Fecha: 28/09/2021 -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<!-- <section>
-        <div class="container">
-            <div><img onClick='Selectcar("impala")' src="/items/impala.jpg" alt="impala" height="150cm" width="200cm">
-                <h1>Impala</h1>
-            </div>
-            <div><img onClick='Selectcar("mustang")' src="/items/mustang.jpeg" alt="mustang" height="150cm"
-                    width="200cm">
-                <h1>Mustang</h1>
-            </div>
-            <div><img onClick='Selectcar("camaro")' src="/items/camaro.jpg" alt="camaro" height="150cm" width="200cm">
-                <h1>Camaro</h1>
-            </div>
-            <div><img onClick='Selectcar("fuego")' src="/items/fuego.jpg" alt="fuego" height="150cm" width="200cm">
-                <h1>Fuego</h1>
-            </div>
-        </div>
-        <div>
-            <div id="contenedorTexto"></div>
-        </div>
-    </section> -->
-
 <body>
+    <!-- Pantalla fase 1 Start Game -->
     <section id="1">
         <div class="diapositiva1"
             style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
@@ -51,6 +31,7 @@ Fecha: 28/09/2021 -->
         </div>
     </section>
 
+    <!-- Pantalla fase 2 Select characters -->
     <section id="2" style="display: none;">
         <div class="diapositiva2"
             style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
@@ -84,6 +65,7 @@ Fecha: 28/09/2021 -->
         </div>
     </section>
 
+    <!-- Pantalla fase 3 Carrera -->
     <section id="3" style="display: none;">
         <div class="diapositiva3"
             style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
@@ -94,10 +76,18 @@ Fecha: 28/09/2021 -->
                 <img class="pic" id="corredor1" src="" alt="Corredor1" />
                 <img class="pic" id="corredor2" src="" alt="Corredor2" />
             </div>
-            <div class="inf-jugar"></div>
+            <div class="inf-jugar">
+                <div class="boton-player1">
+                    <button type="button" id="btn-go" class="btn btn-warning" onclick='pulsacionAvanzar("player1")'>GO</button>
+                    <button type="button" id="btn-go" class="btn btn-warning" onclick='pulsacionAvanzar("player2")'>GO</button>
+
+                </div>
+                <div class="boton-player2"></div>
+            </div>
         </div>
     </section>
 
+    <!-- Pantalla fase 4 Pantalla jugador ganador -->
     <section id="4" style="display: none;">
         <div class="diapositiva4">
         </div>

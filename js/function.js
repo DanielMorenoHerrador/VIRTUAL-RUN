@@ -1,10 +1,8 @@
-
-
 //Cambio de pantalla
 
 const cambiarPantalla = (valor) => {
 
-    let arrayDeFases = ["1","2","3","4"];
+    let arrayDeFases = ["1", "2", "3", "4"];
 
     arrayDeFases = arrayDeFases.filter(iterador => !valor.includes(iterador));
 
@@ -21,35 +19,35 @@ const cambiarPantalla = (valor) => {
 // Instanciar los corredores
 
 class Corredores {
-    constructor(nombre, aceleracion, velocidad){
+    constructor(nombre, aceleracion, velocidad) {
         this.nombre = nombre,
-        this.aceleracion = aceleracion,
-        this.velocidad = velocidad
+            this.aceleracion = aceleracion,
+            this.velocidad = velocidad
     }
-    
+
 }
 
-let Corredores1 = new Corredores("sonic","20","60")
-let Corredores2 = new Corredores("pikachu","30","40")
-let Corredores3 = new Corredores("luffy","40","50")
-let Corredores4 = new Corredores("itachi","35","45")
+let Corredores1 = new Corredores("sonic", "20", "60")
+let Corredores2 = new Corredores("pikachu", "30", "40")
+let Corredores3 = new Corredores("luffy", "40", "50")
+let Corredores4 = new Corredores("itachi", "35", "45")
 
 
 //Variables
 
-let corredor1 = document.getElementById("corredor1");
+let corredor1 = "";
 let corredor2 = "";
-let arrayDeCorredores = ["",""]
+let arrayDeCorredores = ["", ""]
 var indice = 0;
 
 
 // Traductor
 
 let traductorCorredores = {
-        "sonic" : Corredores1,
-        "pikachu" : Corredores2,
-        "luffy" : Corredores3,
-        "itachi" : Corredores4
+    "sonic": Corredores1,
+    "pikachu": Corredores2,
+    "luffy": Corredores3,
+    "itachi": Corredores4
 }
 
 
@@ -58,17 +56,16 @@ let traductorCorredores = {
 
 const seleccionarCorredores = (personajeElegido) => {
 
-    if (corredor1 !=""){
+    if (corredor1 != "") {
         corredor2 = traductorCorredores[personajeElegido]
 
-        console.log("El corredor 1 es",corredor1);
-        console.log("El corredor 2 es",corredor2);
+        console.log("El corredor 1 es", corredor1);
+        console.log("El corredor 2 es", corredor2);
 
-        setTimeout(()=>{
+        setTimeout(() => {
             cambiarPantalla("3");
-        },2000)
-    } 
-    else {
+        }, 2000)
+    } else {
 
         corredor1 = traductorCorredores[personajeElegido];
 
@@ -84,14 +81,17 @@ var Metrosarecorrer = 4000;
 
 // Mostrar los corredores seleccionados
 
-const carreraVs =() =>{
-    var corredor1 = document.getElementsByClassName("participante1");
-    var corredor2 = document.getElementsByClassName("participante2");
+
+
+
+
+
+// Funcion de carrera mediante click
+
+
+const pulsacionAvanzar = (correr) => {
+
+    var btn = document.getElementById('btn-go');
+    btn.addEventListener()
+
 }
-
-
-
-// const carreraVs =() =>{
-//     let arrayDeCorredores = ["1","2"];
-//     arrayDeCorredores = arrayDeCorredores.filter.corredor1 + arrayDeCorredores.filter.corredor2
-// }
