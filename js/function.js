@@ -139,8 +139,8 @@ const corredoresMostrados = () => {
 
 // function resetearJuego() {
 //     indice = 0;
-//     MetrosRecorridosCoche0 = 0;
-//     MetrosRecorridosCoche1 = 0;
+//     Metroscorredor1 = 0;
+//     Metroscorredor2 = 0;
 //     cambiarPantalla("1");
 //     document.getElementById("botonResultado").style.display = "none";
 // }
