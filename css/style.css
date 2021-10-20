@@ -162,17 +162,39 @@ body {
 
 /* Estilos contenedores pantalla fase 3 */
 
-.race {
-    background-color: transparent;
-    height: 58em;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: inherit;
+
+.titulothree {
+    font-size: 10em;
+    height: 2em;
 }
 
+.race {
+    background-color: transparent;
+    height: 55em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 
+.personajeacorrer1 {
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.personajeacorrer2 {
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-jugar {
+    height: 10em;
+}
 /* Estilo nombres personajes */
 
 .nombrepersonaje {

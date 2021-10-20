@@ -23,18 +23,19 @@ const cambiarPantalla = (valor) => {
 // Instanciar los corredores
 
 class Corredores {
-    constructor(nombre, aceleracion, velocidad) {
+    constructor(nombre, aceleracion, velocidad, imagen) {
         this.nombre = nombre;
         this.aceleracion = aceleracion;
         this.velocidad = velocidad;
+        this.imagen = imagen;
     }
 
 }
 
-let Corredores1 = new Corredores("sonic", "20", "60")
-let Corredores2 = new Corredores("pikachu", "30", "40")
-let Corredores3 = new Corredores("luffy", "40", "50")
-let Corredores4 = new Corredores("itachi", "35", "45")
+let Corredores1 = new Corredores("sonic", "20", "60", "soniccorriendo.gif")
+let Corredores2 = new Corredores("pikachu", "30", "40", "pikachucorriendo.gif")
+let Corredores3 = new Corredores("luffy", "40", "50", "luffy.gif")
+let Corredores4 = new Corredores("itachi", "35", "45", "itachicorriendo.gif")
 
 
 //Variables
@@ -63,17 +64,22 @@ const seleccionarCorredores = (personajeElegido) => {
     if (corredor1 != "") {
         corredor2 = traductorCorredores[personajeElegido]
         console.log("El corredor 2 es", corredor2);
-        
+
+        corredoresMostrados();
+
+        setTimeout(() => {
+            cambiarPantalla("3");
+        }, 2000)
+
     } else {
         corredor1 = traductorCorredores[personajeElegido];
         console.log("El corredor 1 es", corredor1);
-    
-     setTimeout(() => {
-            cambiarPantalla("3");
-        }, 2000)
+
+        
     }
 
-   
+
+
 }
 
 
@@ -87,28 +93,15 @@ let Metrosarecorrer = 4000;
 // Mostrar los corredores seleccionados
 
 const corredoresMostrados = () => {
-    document.getElementById("carrera").innerHTML=
-        `
 
-    <div class="personajeacorrer1">
-            <div> <img src="/items/${corredor1.nombre}.gif></div>
+    document.getElementById("carrera").innerHTML =
+        `
+        <div class="personajeacorrer1"><img src= "/items/${corredor1.imagen}" alt="">
         </div>
-        <div class="personajeacorrer2">
-            <div> <img src="/items/${corredor2.nombre}.gif"/></div>
-        </div>
+            <div class="personajeacorrer2"><img src= "/items/${corredor2.imagen}" alt="">
+            </div>
             `;
 }
-
-
-
-// const CorredoresMostrados2 = (corredor1, corredor2) => {
-
-//     if (corredor1 = !traductorCorredores[Corredores2], !traductorCorredores[Corredores3], !traductorCorredores[Corredores4]) {
-//         return document.getElementById("sonic");
-//     } else (corredor1 = !traductorCorredores[Corredores1], !traductorCorredores[Corredores3], !traductorCorredores[Corredores4]); {
-//         return document.getElementById("pikachu");
-//     } 
-// }
 
 // Funcion de carrera
 
