@@ -24,9 +24,9 @@ const cambiarPantalla = (valor) => {
 
 class Corredores {
     constructor(nombre, aceleracion, velocidad) {
-        this.nombre = nombre,
-            this.aceleracion = aceleracion,
-            this.velocidad = velocidad
+        this.nombre = nombre;
+        this.aceleracion = aceleracion;
+        this.velocidad = velocidad;
     }
 
 }
@@ -41,8 +41,7 @@ let Corredores4 = new Corredores("itachi", "35", "45")
 
 let corredor1 = "";
 let corredor2 = "";
-let arrayDeCorredores = ["", ""]
-var indice = 0;
+let indice = 0;
 
 
 // Traductor
@@ -58,44 +57,90 @@ let traductorCorredores = {
 
 // Seleccion de corredores
 
+
 const seleccionarCorredores = (personajeElegido) => {
 
     if (corredor1 != "") {
         corredor2 = traductorCorredores[personajeElegido]
-
-        console.log("El corredor 1 es", corredor1);
         console.log("El corredor 2 es", corredor2);
-
-        setTimeout(() => {
+        
+    } else {
+        corredor1 = traductorCorredores[personajeElegido];
+        console.log("El corredor 1 es", corredor1);
+    
+     setTimeout(() => {
             cambiarPantalla("3");
         }, 2000)
-    } else {
-
-        corredor1 = traductorCorredores[personajeElegido];
-
     }
+
+   
 }
+
 
 // Distancia que recorren los corredores
 
-var Metroscorredor1 = 0;
-var Metroscorredor2 = 0;
-var Metrosarecorrer = 4000;
+let Metroscorredor1 = 0;
+let Metroscorredor2 = 0;
+let Metrosarecorrer = 4000;
 
 
 // Mostrar los corredores seleccionados
 
+const corredoresMostrados = () => {
+    document.getElementById("carrera").innerHTML=
+        `
 
-
-
-
-
-// Funcion de carrera mediante click
-
-
-const pulsacionAvanzar = (correr) => {
-
-    var btn = document.getElementById('btn-go');
-    btn.addEventListener()
-
+    <div class="personajeacorrer1">
+            <div> <img src="/items/${corredor1.nombre}.gif></div>
+        </div>
+        <div class="personajeacorrer2">
+            <div> <img src="/items/${corredor2.nombre}.gif"/></div>
+        </div>
+            `;
 }
+
+
+
+// const CorredoresMostrados2 = (corredor1, corredor2) => {
+
+//     if (corredor1 = !traductorCorredores[Corredores2], !traductorCorredores[Corredores3], !traductorCorredores[Corredores4]) {
+//         return document.getElementById("sonic");
+//     } else (corredor1 = !traductorCorredores[Corredores1], !traductorCorredores[Corredores3], !traductorCorredores[Corredores4]); {
+//         return document.getElementById("pikachu");
+//     } 
+// }
+
+// Funcion de carrera
+
+
+// function checkIndice() {
+//     if (indice == 2) {  
+//         cambiarPantalla("4");
+//         var IntervaloDistancia = window.setInterval(function () {
+//             Metroscorredor1 += Math.random() * (100 - 50) + 50;
+//             Metroscorredor2 += Math.random() * (100 - 50) + 50;
+//             if (Metroscorredor1 >= Metrosarecorrer || Metroscorredor2 >= Metrosarecorrer) {
+//                 document.getElementById("botonResultado").style.display = "block";
+//                 clearInterval(IntervaloDistancia);
+//                 if (Metroscorredor1 < Metroscorredor2) {
+//                     document.getElementById("ganador").src = "img/" + corredor1 + ".jpg";
+//                 }
+//                 else {
+//                     document.getElementById("ganador").src = "img/" + corredor2 + ".jpg";
+//                 }
+//             }   
+//             document.getElementById("contadorcorredor1").innerHTML = "Metros recorridos: " + Metroscorredor1.toFixed(2);
+//             document.getElementById("contadorcorredor2").innerHTML = "Metros recorridos: " + Metroscorredor2.toFixed(2);
+//         }, 1000);
+//     }
+// }
+
+// Funcion resetear carrera
+
+// function resetearJuego() {
+//     indice = 0;
+//     MetrosRecorridosCoche0 = 0;
+//     MetrosRecorridosCoche1 = 0;
+//     cambiarPantalla("1");
+//     document.getElementById("botonResultado").style.display = "none";
+// }

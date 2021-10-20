@@ -155,29 +155,22 @@ body {
     justify-content: center;
 }
 
+.trans{
+    filter: grayscale(100%)
+}
 
-/* Estilos contenedores pantalla fase 2 */
 
-.sup-titulo {
+/* Estilos contenedores pantalla fase 3 */
+
+.race {
     background-color: transparent;
-    height: 20%;
+    height: 58em;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: inherit;
 }
 
-.med-carrera {
-    height: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.inf-jugar {
-    height: 20%;
-    background-color: transparent;
-}
 
 
 /* Estilo nombres personajes */

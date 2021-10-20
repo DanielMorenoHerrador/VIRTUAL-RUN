@@ -12,11 +12,12 @@ Fecha: 05/10/2021 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <!-- Pantalla fase 1 Start Game -->
     <section id="1">
@@ -40,7 +41,7 @@ Fecha: 05/10/2021 -->
             </div>
             <div class="div med-med">
                 <div class="col med-one">
-                    <img class="pic" onclick='seleccionarCorredores("sonic")' src="items/sonicsprite.gif" alt="sonic"
+                    <img class="pic" id="sonic" onclick='seleccionarCorredores("sonic")' src="items/sonicsprite.gif" alt="sonic"
                         height="350em" />
                     <h1 class="nombrepersonaje">SONIC</h1>
                 </div>
@@ -55,8 +56,8 @@ Fecha: 05/10/2021 -->
                     <h1 class="nombrepersonaje">LUFFY</h1>
                 </div>
                 <div class="col med-four">
-                    <img class="pic" onclick='seleccionarCorredores("itachi")' src="items/itachisprite.gif"
-                        alt="itachi" height="350em" />
+                    <img class="pic" onclick='seleccionarCorredores("itachi")' src="items/itachisprite.gif" alt="itachi"
+                        height="350em" />
                     <h1 class="nombrepersonaje">ITACHI</h1>
                 </div>
             </div>
@@ -66,25 +67,8 @@ Fecha: 05/10/2021 -->
     </section>
 
     <!-- Pantalla fase 3 Carrera -->
-    <section id="3" style="display: none;">
-        <div class="diapositiva3"
-            style="background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
-            <div class="sup-titulo">
-                <h1 class="titulotwo" style="color: white; font-family: fantasy;">VIRTUAL RUN 1.0</h1>
-            </div>
-            <div id="corredorescarrera" class="med-carrera">
-                <img class="pic" id="corredor1" src="" alt="Corredor1" />
-                <img class="pic" id="corredor2" src="" alt="Corredor2" />
-            </div>
-            <div class="inf-jugar">
-                <div class="boton-player1">
-                    <button type="button" id="btn-go" class="btn btn-warning" onclick='pulsacionAvanzar("player1")'>GO</button>
-                    <button type="button" id="btn-go" class="btn btn-warning" onclick='pulsacionAvanzar("player2")'>GO</button>
-
-                </div>
-                <div class="boton-player2"></div>
-            </div>
-        </div>
+    <section id="3" style="display: none; background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
+        <div id="carrera" class="race"></div>
     </section>
 
     <!-- Pantalla fase 4 Pantalla jugador ganador -->
