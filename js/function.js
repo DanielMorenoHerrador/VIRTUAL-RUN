@@ -97,8 +97,8 @@ const corredoresMostrados = () => {
     document.getElementById("carrera").innerHTML =
         `
         <div class="posicioncorredores">
-            <div class="personajeacorrer1"><img class="pic" src= "/items/${corredor1.imagencorriendo}" alt=""></div>
-            <div class="personajeacorrer2"><img class="pic" src= "/items/${corredor2.imagencorriendo}" alt=""></div>
+            <div class="personajeacorrer1"><img class="pic" src= "items/${corredor1.imagencorriendo}" alt=""></div>
+            <div class="personajeacorrer2"><img class="pic" src= "items/${corredor2.imagencorriendo}" alt=""></div>
         </div>
         <div class="metrosrecorridos">
             <div class="metro1" id="potenciacorredor1">${corredor1.distancia}</div>
@@ -181,7 +181,7 @@ const final = () => {
         `
     <div class="camp">
     <h1 class="tituloganador">El ganador es:</h1>
-    <div class="imagenganador"><img src='/items/${ganador.imagen}'/></div>
+    <div class="imagenganador"><img src='items/${ganador.imagen}'/></div>
     <div class="nombreganador">${ganador.nombre}</div>  
     </div>
     <div class="hwinner">
