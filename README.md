@@ -1,5 +1,5 @@
-# Car-Racing
-##  Proyecto carrera de coches creado con HTML5, CSS y JS
+# VIRTUAL RUN
+##  Proyecto carrera de personajes videojuegos y anime creado con HTML5, CSS y JS
 ## Autor: Daniel Moreno Herrador     Fecha:  04/10/2021
 
 La primera pagina esta compuesta por el título "VIRTUAL RUN 1.0" y un boton "START" para iniciar el juego.
