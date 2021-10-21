@@ -33,7 +33,7 @@ class Corredores {
     setCorrer(potencia) {
         this.distancia += potencia;
     }
-    getCorrer(){
+    getCorrer() {
 
     }
 }
@@ -82,7 +82,7 @@ const seleccionarCorredores = (personajeElegido) => {
         corredor1 = traductorCorredores[personajeElegido];
         console.log("El corredor 1 es", corredor1);
 
-        
+
     }
 
 
@@ -96,19 +96,20 @@ const corredoresMostrados = () => {
 
     document.getElementById("carrera").innerHTML =
         `
-        <div class="personajeacorrer1"><img class="pic" src= "/items/${corredor1.imagencorriendo}" alt="">
-        </div>
+        <div class="posicioncorredores">
+            <div class="personajeacorrer1"><img class="pic" src= "/items/${corredor1.imagencorriendo}" alt=""></div>
             <div class="personajeacorrer2"><img class="pic" src= "/items/${corredor2.imagencorriendo}" alt=""></div>
-        <div class="metrosrecorridos">
-            <div  class="metro1" id="potenciacorredor1">${corredor1.distancia}</div>
-            <div  class="metro2" id="potenciacorredor2">${corredor2.distancia}</div>
         </div>
-        <div class="boton1"  id="cmptcn" onclick="acelerar()"><button>CORRER</button></div> 
+        <div class="metrosrecorridos">
+            <div class="metro1" id="potenciacorredor1">${corredor1.distancia}</div>
+            <div class="metro2" id="potenciacorredor2">${corredor2.distancia}</div>
+        </div>
+        <div class="botoncorrer"  id="cmptcn" onclick="acelerar()"><button>CORRER</button></div> 
             `;
 }
 
-// Funcion de carrera
 
+// Funcion de acelerar para correr
 
 const acelerar1 = () => {
     let random = Math.floor(Math.random() * (50 - 5) + 5);
@@ -129,6 +130,8 @@ const acelerar2 = () => {
 }
 
 
+// Funcion para comparar resultados del random
+
 const acelerar = () => {
     acelerar1();
     acelerar2();
@@ -140,40 +143,42 @@ const compararCorredores = () => {
 
     if (corredor1.distancia < potencia && corredor2.distancia < potencia) {
 
-    console.log("continua la carrera");
+        console.log("continua la carrera");
     } else {
-    document.getElementById("cmptcn").style.display = "none";
-    if (corredor1.distancia > corredor2.distancia && corredor2.distancia < corredor1.distancia) {
-        console.log(`THE WINNER IS ${corredor1.nombre}`);
+        document.getElementById("cmptcn").style.display = "none";
+        if (corredor1.distancia > corredor2.distancia && corredor2.distancia < corredor1.distancia) {
+            console.log(`El ganador es ${corredor1.nombre}`);
 
-        setTimeout(() => {
-            cambiarPantalla("4");
-            final();
-        }, 1000);
+            setTimeout(() => {
+                cambiarPantalla("4");
+                final();
+            }, 1000);
 
-        ganador = corredor1;
-        ganador.innerHTML = `El ganador es ${corredor1.nombre} !!!!`;
-        console.log(ganador)
+            ganador = corredor1;
+            ganador.innerHTML = `El ganador es ${corredor1.nombre}`;
+            console.log(ganador)
 
-    } else {
-        console.log(`THE WINNER IS ${corredor2.nombre}`)
+        } else {
+            console.log(`El ganador es ${corredor2.nombre}`)
 
-        setTimeout(() => {
-            cambiarPantalla("4");
-            final();
-        }, 1000);
+            setTimeout(() => {
+                cambiarPantalla("4");
+                final();
+            }, 1000);
 
-        ganador = corredor2;
-        ganador.innerHTML = `El ganador es ${corredor2.nombre} !!!!`;
-        console.log(ganador)
+            ganador = corredor2;
+            ganador.innerHTML = `El ganador es ${corredor2.nombre} !!!!`;
+            console.log(ganador)
 
         }
     }
 }
 
+// Funcion para mostrar al personaje ganador
+
 const final = () => {
     document.getElementById("winner").innerHTML =
-    `
+        `
     <div class="camp">
     <h1 class="tituloganador">El ganador es:</h1>
     <div class="imagenganador"><img src='/items/${ganador.imagen}'/></div>
@@ -181,13 +186,15 @@ const final = () => {
     </div>
     <div class="hwinner">
     <div class="botonrestart">
-            <button id="restart" type="button" onclick=restart()>RESTART</button>
+        <button id="restart" type="button" onclick=restart()>RESTART</button>
         </div>
     </div>
     </div>
     `;
 }
-  //funcion restart
+
+
+//funcion restart
 const restart = () => {
     cambiarPantalla("1");
     corredor1.distance = 0;

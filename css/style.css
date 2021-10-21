@@ -32,12 +32,10 @@ body {
 }
 
 .diapositiva3 {
-    background-color: yellow;
     height: 100vh;
 }
 
 .diapositiva4 {
-    background-color: red;
     height: 100vh;
 }
 
@@ -162,9 +160,7 @@ body {
 }
 
 
-
 /* Estilos contenedores pantalla fase 3 */
-
 
 .titulothree {
     display: flex;
@@ -184,21 +180,83 @@ body {
 .personajeacorrer1 {
     background-color: transparent;
     height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3cm;
 }
 
 .personajeacorrer2 {
     background-color: transparent;
     height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3cm;
 }
 
-.zona_boton {
+.posicioncorredores {
     background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+}
+
+.metrosrecorridos {
+    background-color: transparent;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1cm;
+    
+}
+
+.botoncorrer {
+    background-color: transparent;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1cm;
+}
+
+/* Estilos contenedores pantalla fase 3 */
+
+.tituloganador {
+    height: 1cm;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    height: 10%;
+    justify-content: center;
+    font-size: 1cm;
 }
+
+.imagenganador {
+    height: 8cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombreganador {
+    height: 3cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1cm;
+}
+
+.hwinner {
+    height: 4cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Estilo nombres y tamaño personajes */
 
 .nombrepersonaje {
