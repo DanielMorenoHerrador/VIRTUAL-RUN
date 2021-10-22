@@ -18,7 +18,7 @@ Fecha: 05/10/2021 -->
 
 </head>
 
-<body>
+<body onload="checkCookie()">
     <!-- Pantalla fase 1 Start Game -->
     <section id="1">
         <div class="diapositiva1"
@@ -41,8 +41,8 @@ Fecha: 05/10/2021 -->
             </div>
             <div class="div med-med">
                 <div class="col med-one">
-                    <img class="pic" id="sonic" onclick='seleccionarCorredores("sonic")' src="items/sonicsprite.gif" alt="sonic"
-                        height="350em" />
+                    <img class="pic" id="sonic" onclick='seleccionarCorredores("sonic")' src="items/sonicsprite.gif"
+                        alt="sonic" height="350em" />
                     <h1 class="nombrepersonaje">SONIC</h1>
                 </div>
                 <div class="col med-two">
@@ -67,7 +67,8 @@ Fecha: 05/10/2021 -->
     </section>
 
     <!-- Pantalla fase 3 Carrera -->
-    <section id="3" style="display: none; background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
+    <section id="3"
+        style="display: none; background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
         <div class="titulothree">
             <h1 class="titulotwo" style="color: white; font-family: fantasy;">VIRTUAL RUN 1.0</h1>
         </div>
@@ -75,7 +76,8 @@ Fecha: 05/10/2021 -->
     </section>
 
     <!-- Pantalla fase 4 Pantalla jugador ganador -->
-    <section id="4"  style="display: none; background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
+    <section id="4"
+        style="display: none; background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);">
         <div class="titulothree">
             <h1 class="titulotwo" style="color: white; font-family: fantasy;">VIRTUAL RUN 1.0</h1>
         </div>
