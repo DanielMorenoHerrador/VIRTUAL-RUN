@@ -117,7 +117,7 @@ const acelerar1 = () => {
 
     console.log(corredor1.distancia);
     document.getElementById("cmptcn").style.botton = `${corredor1.distancia}`
-    document.getElementById("potenciacorredor1").innerHTML = `P1:${corredor1.distancia}`;
+    document.getElementById("potenciacorredor1").innerHTML = `Player1:${corredor1.distancia}`;
 }
 const acelerar2 = () => {
 
@@ -126,7 +126,7 @@ const acelerar2 = () => {
 
     console.log(corredor2.distancia);
     document.getElementById("cmptcn").style.botton = `${corredor2.distancia}`
-    document.getElementById("potenciacorredor2").innerHTML = `P2:${corredor2.distancia}`;
+    document.getElementById("potenciacorredor2").innerHTML = `Player2:${corredor2.distancia}`;
 }
 
 
@@ -194,7 +194,7 @@ const final = () => {
 }
 
 
-//funcion restart
+// Funcion restart
 
 const restart = () => {
     cambiarPantalla("1");
